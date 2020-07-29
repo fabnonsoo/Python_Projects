@@ -25,7 +25,7 @@ class Data_Scientist(Employee):
     increase_amt = 1.12
 
 
-data_sci_1 = Employee('Nonso', 'Onyia', 90000)           # This can be changed to Data_Scientist as in line 31
+data_sci_1 = Employee('Nonso', 'Onyia', 90000)           # This can be changed to Data_Scientist as in line 29
 data_sci_2 = Data_Scientist('Test', 'Python', 100000)
 
 
@@ -33,7 +33,7 @@ print(help(Data_Scientist))            # Helps reveal how/what Data_Scientist in
 
 print(data_sci_2.email)
 
-# Nothing changes because of Employee() in line 30
+# Nothing changes because of Employee() in line 28
 print(data_sci_1.salary)
 data_sci_1.apply_increase()
 print(data_sci_1.salary)
