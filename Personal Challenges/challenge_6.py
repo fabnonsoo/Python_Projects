@@ -1,0 +1,13 @@
+# CHALLENGE/HOMEWROK 6:- Write a simple program that downloads an image from the internet...
+
+
+import random               # Using this because whenever we're downloading an image we wannna give it a random file name and saving it....
+import urllib.request       # Allows us to download any data from the web.....
+
+
+def download_image_fweb(url):
+    imagename = random.randrange(1, 1000)
+    full_imagename = str(imagename) + ".jpg"              # Saves the image to our computer & picks 482 as a random name:- 482.jpg
+    urllib.request.urlretrieve(url, full_imagename)       # This line downloads the image and saves to our computer.....
+
+download_image_fweb("https://media-exp1.licdn.com/dms/image/C4D03AQH6JdcjLYyaaA/profile-displayphoto-shrink_200_200/0?e=1596067200&v=beta&t=3NoGpLoyGYdsJsmjeSCNlQH22qvwI780cKw2M3XUzt8")
